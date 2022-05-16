@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3</title>
+</head>
+
+<body>
+  <form action="./wynik.php" method="post">
+    <fieldset>
+      <legend>RBY?</legend>
+      <select name="sel[]" id="sel" multiple>
+        <option value="czerwony">czerwony</option>
+        <option value="niebieski">niebieski</option>
+        <option value="zolty">żółty</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>BGW?</legend>
+      <label for="bialy">biały</label>
+      <input type="radio" name="bgw" id="bialy" value="bialy">
+      <label for="szary">szary</label>
+      <input type="radio" name="bgw" id="szary" value="szary">
+      <label for="czarny">czarny</label>
+      <input type="radio" name="bgw" id="czarny" value="czarny">
+    </fieldset>
+    <fieldset>
+      <legend>RGB?</legend>
+      <label for="czerwony">czerwony</label>
+      <input type="checkbox" name="czerwony" id="czerwony">
+      <label for="zielony">zielony</label>
+      <input type="checkbox" name="zielony" id="zielony">
+      <label for="niebieski">niebieski</label>
+      <input type="checkbox" name="niebieski" id="niebieski">
+    </fieldset>
+    <input type="submit" value="Prześlij">
+  </form>
+</body>
+
+</html>

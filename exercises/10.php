@@ -125,7 +125,7 @@ function displayOutput($out) {
 function displayG() {
     if (isset($_POST['g'])) {
         $t = $_POST['g'];
-        $gen = $t == 'k' ? 'Kobieta' : $t == 'm' ? 'Mężczyzna' : 'Wolę nie odpowiadać';
+        $gen = ($t == 'k' ? 'Kobieta' : $t == 'm') ? 'Mężczyzna' : 'Wolę nie odpowiadać';
         return $gen;
     }
 }
